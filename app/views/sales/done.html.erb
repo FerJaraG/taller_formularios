@@ -1,0 +1,24 @@
+<h5><%= notice %></h5>
+
+<table>
+	<tr>
+		<th>cod</th>
+		<th>detalle</th>
+		<th>categoria</th>
+		<th>descuento</th>
+		<th>valor</th>
+		<th>iva</th>
+		<th>total</th>
+	</tr>
+	<tr>
+		<td><%= @sale.cod %></td>
+		<td><%= @sale.detail %></td>
+		<td><%= @sale.category %></td>
+		<td><%= @sale.discount %></td>
+		<td><%= @sale.value %></td>
+		<td><%= @sale.tax %></td>
+		<td><%= @sale.total %></td>
+	</tr>
+</table>
+
+<%= link_to 'Volver', root_path %>
